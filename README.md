@@ -145,13 +145,25 @@ Fonction main() :
 
 
 ###  Formes géométriques :
-
+- <img width="480" height="504" alt="image" src="https://github.com/user-attachments/assets/de6aab5a-fb18-42d7-8e37-25d63e0ff47b" />
 ### Interface de paiement : 
-
+- <img width="480" height="504" alt="image" src="https://github.com/user-attachments/assets/6933ac38-d3c2-444a-aa79-8617bd86e5a4" />
 ###  Gestion d’animaux :
-
+- <img width="480" height="504" alt="image" src="https://github.com/user-attachments/assets/1fcbb09b-175e-4fa7-ac50-c2f281a4209d" />
 ### Système de fichiers virtuel :
+##### input :
+```
+auto racine = make_unique<Dossier>("Racine");
 
+    racine->ajouter(make_unique<Fichier>("note.txt", 10));
+    racine->ajouter(make_unique<Fichier>("image.jpg", 2000));
+
+    auto documents = make_unique<Dossier>("Documents");
+    documents->ajouter(make_unique<Fichier>("cv.pdf", 100));
+    documents->ajouter(make_unique<Fichier>("rapport.docx", 300));
+```
+##### output :
+- <img width="480" height="504" alt="image" src="https://github.com/user-attachments/assets/944d0c0c-f927-47e1-9776-ced9ccf7c072" />
 ## 💡 Concepts Practiced
 
 - Polymorphisme via classes abstraites et méthodes virtuelles
