@@ -56,11 +56,12 @@ int main(int argc, char const *argv[])
 
     for (size_t i = 0; i < size_t(n); i++)
     {
-        double montant;
-        cout << "Le montant de paiment: ";
-        cin >> montant;
+        
         if (tab[i] != nullptr)
         {
+            double montant;
+            cout << "Le montant de paiment: ";
+            cin >> montant;
             cout << "Paiment " << i + 1 << " : " << endl;
             tab[i]->effectuerPaiement(montant);
         }
